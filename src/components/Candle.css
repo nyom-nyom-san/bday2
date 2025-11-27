@@ -1,0 +1,102 @@
+/* = Cake = */
+.ccake {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icake {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 200;
+}
+
+.candle-wrapper {
+    position: absolute;
+    top: 120px;
+    width: 60px;
+    left: 50%;
+    height: 180px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transform: translateX(-50%);
+    backface-visibility: visible;
+}
+
+/* Candle body */
+.candle-body {
+    width: 40px;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Candle top section where flame sits */
+.candle-top {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* == Flame == */
+.flame {
+    width: 18px;
+    height: 28px;
+    background: radial-gradient(circle, #ffec85 0%, #ff9900 70%, #ff4e00 100%);
+    border-radius: 50% 50% 50% 50%;
+    animation: flicker 0.15s infinite alternate;
+    filter: drop-shadow(0 0 8px #ffbb33);
+    transition: opacity 0.4s ease out;
+}
+
+/* Flicker animation */
+@keyframes flicker {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1.1) translateY(-2px);
+    }
+}
+
+/*  == Smoke == */
+.smoke {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(150, 150, 150, 0.6);
+    animation: smokeUp 1.2s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes smokeUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-40px) scale 1.6;
+    }
+}
+
+@media (min-width: 1740px) {
+
+    .icake {
+        margin-bottom: 200px;
+    }
+}

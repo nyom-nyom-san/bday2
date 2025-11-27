@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'hmm';
+    src: url("../assets/Anthony Gilford.otf");
+}
+
+
+.w2 {
+    background: linear-gradient(135deg, #4A90E2, #FF69B4, #30E3CA);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.right-t,
+.left-t {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.left-t {
+    font-family: hmm;
+    font-size: 50px;
+}
+
+.right-t {
+    text-align: left;
+}
