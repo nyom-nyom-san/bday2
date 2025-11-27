@@ -84,16 +84,18 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-color: #4A90E2;
-    color: #30E3CA;
+    background-color: #f5d6a9;
+    color: #2F6B3F;
     font-weight: 600;
 }
 
-.next-btn:hover,
-.before-btn:hover {
-    background-color: #FF69B4;
-    color: #30E3CA;
+
+.next-btn:hover {
+    background-color: #2F6B3F;
+    color: #f5d6a9;
 }
+
+
 
 
 .before-btn {
@@ -105,8 +107,15 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background-color: #4A90E2;
-    color: #30E3CA;
+    background-color: #2F6B3F;
+    color: #f5d6a9;
     font-weight: 600;
 
+
+}
+
+
+.before-btn:hover {
+    background-color: #f5d6a9;
+    color: #2F6B3F;
 }
